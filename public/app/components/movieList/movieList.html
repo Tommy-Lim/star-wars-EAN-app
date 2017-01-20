@@ -1,12 +1,14 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <div class="panel-title">
-      Star Wars Movies
+      All Movies
     </div>
   </div>
   <div class="panel-body">
     <ul>
-      <li ng-repeat="movie in movieListComp.movies track by $index"><a ui-sref="showMovieState({id: {{movie.url.slice(movie.url.length-2, movie.url.length-1)}}})">{{movie.title}} ({{movie.release_date.slice(0,4)}})</a></li>
+      <li ng-repeat="movie in movieListComp.movies track by $index">
+        <a ui-sref="showMovieState({id: {{movie.url.slice(movie.url.length-2, movie.url.length-1)}}})">{{movie.title}} ({{movie.release_date.slice(0,4)}})</a>
+      </li>
     </ul>
   </div>
 </div>

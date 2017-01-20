@@ -19,15 +19,14 @@
   </head>
   <body ng-app="App">
 
-    <nav>
-      <ul>
-        <li><a ui-sref="homeState()">Home</a></li>
-      </ul>
+    <nav class="navbar navbar-default">
+      <a ui-sref="homeState()" class="navbar-brand">Star Wars Movies</a>
     </nav>
 
-    <div ui-view>
-
+    <div class="container">
+        <div ui-view></div>
     </div>
+
 
   </body>
 </html>

@@ -1,15 +1,15 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <div class="panel-title">
-      <h3>{{showMovieComp.movie.title}} ({{showMovieComp.movie.release_date.slice(0,4)}})</h3>
+      {{showMovieComp.movie.title}} ({{showMovieComp.movie.release_date.slice(0,4)}})
     </div>
   </div>
   <div class="panel-body">
-    <h4>Plot</h4>
+    <p><strong>Plot</p></strong>
     <p>{{showMovieComp.movie.opening_crawl}}</p>
-    <h4>Director</h4>
+    <p><strong>Director</p></strong>
     <p>{{showMovieComp.movie.director}}</p>
-    <h4>Producers</h4>
+    <p><strong>Producers</p></strong>
     <p>{{showMovieComp.movie.producer}}</p>
   </div>
 </div>
