@@ -8,8 +8,7 @@ angular.module('App', ['ui.router'])
     $urlRouterProvider,
     $locationProvider
   ){
-    $urlRouterProvider.otherwise('/');
-
+  
     $stateProvider
     .state('homeState', {
       url: '/',
@@ -19,6 +18,8 @@ angular.module('App', ['ui.router'])
       url: '/movie/:id',
       component: 'showMovieComp'
     });
+
+    $urlRouterProvider.otherwise('/');
 
     $locationProvider.html5Mode(true);
   }
